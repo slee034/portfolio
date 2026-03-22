@@ -198,7 +198,7 @@ h3 {
     letter-spacing: -0.01em;
 }
 
-p {
+p, ul, li {
     line-height: 2;
     color: #444;
     font-size: 0.85rem;
