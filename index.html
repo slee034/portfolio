@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Skylar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:italic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="particles"></div>
+    <audio id="bg-music" loop>
+        <source src="ChopinEtudeOp25No1.mp3" type="audio/mpeg">
+    </audio>
+    <div id="entrance">
+        <button class="begin-btn" onclick="enterSite()">[ click to begin ]</button>
+    </div>
+    <div id="audio-footer">
+        <div class="player-row">
+            <span id="play-pause-btn" class="control-btn">PAUSE</span>
+            <span id="mute-btn" class="control-btn">MUTE</span>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.05" value="0.5">
+            <span id="vol-percent" style="min-width: 32px; text-align: right;">50%</span>
+        </div>
+        <div class="artist-credits">
+            Performance / <a href="https://youtu.be/LSQjZj_9txE?si=FTysb7Zg9ndbrO54" target="_blank">Annique Göttler</a>
+        </div>
+    </div>
+    <main id="main-content">
+        <header>
+            <h1 style="font-family: 'Playfair Display', serif; font-weight: 400; font-size: 4rem; margin: 0;">Skylar Lee</h1>
+            <p style="color: var(--accent-color); letter-spacing: 6px; font-size: 0.7rem; margin-top: 15px;">Experience | About Me</p>
+        </header>
+        <section id="experience-list">
+            <div class="bullet-point">
+                <span class="date">09/2022 - Present (3.5+ Yrs)</span>
+                <h3>Software Engineer, Northrop Grumman</h3>
+                <p>• Developed a dashboard GUI webpage that displays useful data, such as indicator lights and logs, in real-time to users during extensive testing (HTML/CSS/JS for GUI and C++ for back-end logic).</p>
+                <p>• Created various webpages imitating machine boot-ups, shutdowns, failures, and error codes based on real aircraft devices for trainees.</p>
+                <p>• Designed a mock webpage identical to the RHEL7 login screen for simulation purposes (HTML/CSS/JS), making it indistinguishable to customers and senior engineers.</p>
+                <p>• Collaborated on large-scale C++ projects, implementing numerous classes and objects to support client-server interactions and multithreaded applications.</p>
+                <p>• Created many bash scripts for automated installation processes and program execution.</p>
+                <p>• Worked with FVWM (Virtual Window Manager) for various desktop customizations.</p>
+                <p>• Traveled out-of-state to support other teams with testing, debugging, and integration, especially during critical times of need.</p>
+                <p>• Created Java unit tests for code stability and improvement to overall software quality.</p>
+            </div>
+            <div class="bullet-point">
+                <span class="date">02/2020 - 08/2022</span>
+                <h3>Freelance Web Developer</h3>
+                <p><a href="https://slee034.github.io/editing/" target="_blank" class="social-link">Personal Example</a> (published in 2020)</p>
+                <p>• Created visually appealing, user-friendly websites for clients.</p>
+                <p>• Integrated dynamic animations (such as scroll-triggered movements) to enrich user experience.</p>
+                <p>• Maintained clear communication with clients on website modifications, ensuring alignment with their vision.</p>
+                <p>• Defined project objectives and plans to facilitate client understanding and project progression.</p>
+                <p>• Delivered regular project updates, completing tasks on time or ahead of schedule.</p>
+            </div>
+            <div class="bullet-point">
+                <span class="date">Graduated: 05/2022</span>
+                <h3>Florida Institute of Technology</h3>
+                <p>Field of Study - Computer Engineering</p>
+                <p>3.20 GPA</p>
+                <p><a href="https://slee034.github.io/3Dprinter/" target="_blank" class="social-link">Senior Design Project</a></p>
+            </div>
+            <div class="bullet-point">
+                <span class="date">05/2014 — 08/2019</span>
+                <h3>Computer Technician (Older Experience) - Seasonal, Crestwell School</h3>
+                <p>• Used secondhand hardware to build PCs for the computer lab and staff, saving significant money for the school.</p>
+                <p>• Debugged operating system and various applications to identify launch and performance issues.</p>
+                <p>• Addressed and troubleshot computer issues raised by end-users.</p>
+                <p>• Reconfigured and tested hardware on workstations for optimal operation.</p>
+                <p>• Updated OS and managed viruses for computer security/protection.</p>
+                <p>• Set up projectors for Smart Boards and other electronics throughout the school.</p>
+            </div>
+            <div class="bullet-point">
+                <h3>About Me | Hobbies</h3>
+                <p>Soccer - played Junior Varsity (JV), nowadays play pick-up games with coworkers and others</p>
+                <p>Piano - particpated in various competitions until 17/18 yrs of age, still casually play to this day</p>
+                <p>Favorite composers - Bach, Scarlatti, Beethoven, Chopin, Liszt, Tchaikovsky, Scriabin</p>
+            </div>
+            <div class="bullet-point">
+                <h3>Connect</h3>
+                <div class="social-grid">
+                    <a href="mailto:slee03490@gmail.com" class="social-link">Email</a>
+                    <a href="https://www.linkedin.com/in/slee03490/" target="_blank" class="social-link">LinkedIn</a>
+                </div>
+            </div>
+            <footer>© 2026 Skylar Lee</footer>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
