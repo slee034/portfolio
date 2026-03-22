@@ -14,8 +14,16 @@ for (let i = 0; i < 40; i++) {
     const side = Math.random() > 0.5 ? 'left' : 'right';
     const pos = Math.random() * 18; 
     note.style.top = Math.random() * 100 + '%';
-    if (side === 'left') note.style.left = pos + '%';
-    else note.style.right = pos + '%';
+
+    if (side === 'left') 
+    {
+        note.style.left = pos + '%';
+    }
+    else 
+    {
+        note.style.right = pos + '%';   
+    }
+    
     note.style.setProperty('--dur', (12 + Math.random() * 15) + 's');
     note.style.setProperty('--delay', (Math.random() * -20) + 's');
     container.appendChild(note);
@@ -40,7 +48,7 @@ function enterSite() {
                 else e.target.classList.remove('is-visible');
             });
         }, { threshold: 0.15 });
-        document.querySelectorAll('.bullet-point, .finale-section').forEach(el => obs.observe(el));
+        document.querySelectorAll('.bullet-point').forEach(el => obs.observe(el));
     }, 500);
 }
 
