@@ -5,6 +5,7 @@
     --line-color: #e0ddd7;
 }
 
+/* Main Style Properties */
 body, html {
     margin: 0;
     padding: 0;
@@ -16,6 +17,21 @@ body, html {
     scroll-behavior: smooth;
 }
 
+h3 {
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+p {
+    line-height: 2;
+    color: #444;
+    font-size: 0.85rem;
+    margin-top: 18px;
+}
+
+/* Floating Music Notes */
 #particles {
     position: fixed;
     top: 0;
@@ -40,6 +56,7 @@ body, html {
     font-size: 1.5rem;
 }
 
+/* Click to Begin Page */
 #entrance {
     position: fixed;
     top: 0;
@@ -65,7 +82,7 @@ body, html {
     padding: 20px;
 }
 
-/* Audio Player (Located at Footer) */
+/* Audio Player (Located Bottom Right) */
 #audio-footer {
     position: fixed;
     bottom: 40px;
@@ -88,23 +105,6 @@ body, html {
     color: var(--accent-color);
 }
 
-.artist-credits {
-    font-size: 0.55rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #bbb;
-}
-
-.artist-credits a {
-    color: var(--accent-color);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-}
-
-.artist-credits a:hover {
-    border-color: var(--accent-color);
-}
-
 .control-btn {
     cursor: pointer;
     user-select: none;
@@ -115,7 +115,7 @@ body, html {
     color: var(--text-color);
 }
 
-/* Audio Slidebar */
+/* Audio Slidebar Itself */
 input[type=range] {
     appearance: none;
     -webkit-appearance: none;
@@ -152,6 +152,24 @@ input[type=range]::-moz-range-thumb {
     cursor: pointer;
 }
 
+/* Music Credits Under Audio Slidebar */
+.artist-credits {
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #bbb;
+}
+
+.artist-credits a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.artist-credits a:hover {
+    border-color: var(--accent-color);
+}
+
 /* Content Sections */
 #main-content {
     position: relative;
@@ -167,7 +185,16 @@ header {
     text-align: center;
 }
 
-.bullet-point {
+.date {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--accent-color);
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.sections {
     margin-bottom: 220px;
     border-left: 1px solid var(--line-color);
     padding-left: 40px;
@@ -183,29 +210,7 @@ header {
     filter: blur(0px);
 }
 
-.date {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    color: var(--accent-color);
-    font-size: 0.85rem;
-    margin-bottom: 12px;
-    display: block;
-}
-
-h3 {
-    font-weight: 400;
-    font-size: 1.7rem;
-    margin: 0;
-    letter-spacing: -0.01em;
-}
-
-p, ul, li {
-    line-height: 2;
-    color: #444;
-    font-size: 0.85rem;
-    margin-top: 18px;
-}
-
+/* Connect Section */
 .social-grid {
     margin-top: 30px;
     display: flex;
